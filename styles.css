@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    box-sizing: border-box;
+}
+
+.main_container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(50, 0, 48, 0.8),rgba(243, 174, 238, 0.8)), url(../image/5-Best-Florists-in-Glasgow-1024x682.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.login_page{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    left:50%;
+    bottom:365px;
+    transform: translate(-50%,50%);
+    background: #fff;
+    border-radius: 20px;
+    border: 2px solid #40013e93;
+    padding: 50px 60px 70px;
+    text-align: center;
+
+}
+
+.login_page h1{
+    font: size 30px;
+    margin-bottom: 60px;
+    color:#a0009ba5;
+    position: relative;
+}
+
+.login_page h1::after{
+    content:'';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background:#a0009ba5;
+    position: absolute;
+    bottom:-12px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.input_field{
+    font-size: 30px;
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display:flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input_field i{
+
+    margin-left: 15px;
+    color:#999;
+
+}
+
+form p{
+
+    text-align: left;
+    font-size:13px;
+    visibility: hidden;
+
+}
+
+form p a{
+
+    text-decoration: none;
+    color: #a0009ba5;
+
+}
+
+#checkbox{
+
+text-align: center;
+padding: 20px;
+visibility: hidden;
+}
+.checkbox{
+
+    width: 20px;
+}
+
+.form_body{
+    height: 250px;
+}
+
+
+.btn{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn button{
+    
+    flex-basis: 48%;
+    background: #a0009ba5;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border:0;
+    outline:0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+
+.btn button.hidden{
+    background:#eaeaea ;
+    color: #555;
+
+}
+
+.mainButton {
+    width: 100%;
+    display: flex;
+}
+
+.submit_button{
+
+    flex-basis: 100%;
+    background: #a0009ba5;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+      
+}
+
+.submit{
+
+    color: #fff;
+    font-size:15px;     
+}
+
+
+
+
+@media only screen and (max-width: 400px)  {
+   
+.login_page{
+    width: 70%;
+    max-width: 360px;
+    position: absolute;
+    left:50%;
+    bottom:365px;
+    transform: translate(-50%,50%);
+    background: #fff;
+    border-radius: 20px;
+    border: 2px solid #40013e93;
+    padding: 50px 60px 70px;
+    text-align: center;
+
+}
+  }
+
+  @media only screen and (max-width: 1200px) {
+   
+    .login_page{
+        width: 100%;
+        max-width: 470px;
+        position: absolute;
+        left:50%;
+        bottom:565px;
+        transform: translate(-50%,50%);
+        background: #fff;
+        border-radius: 20px;
+        border: 2px solid #40013e93;
+        padding: 50px 60px 70px;
+        text-align: center;
+    
+    }
+      }
